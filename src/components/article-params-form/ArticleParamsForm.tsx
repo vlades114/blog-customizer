@@ -54,6 +54,8 @@ export const ArticleParamsForm = ({
 	};
 
 	useEffect(() => {
+		if (!isSidebarOpen) return;
+
 		function handleOutsideClick(event: MouseEvent) {
 			if (
 				sidebarRef.current &&
